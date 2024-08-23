@@ -3,7 +3,7 @@ name: Update Data JSON
 # Trigger this workflow every 2 minutes
 on:
   schedule:
-    - cron: "*/2 * * * *"  # Runs every 2 minutes
+    - cron: "*/1 * * * *"  # Runs every 2 minutes
     
   # Optionally, run the workflow manually from GitHub Actions tab
   workflow_dispatch:
@@ -29,8 +29,8 @@ jobs:
           pip install -r requirements.txt || echo "No dependencies to install"
 
       # Step 4: Run the Python script (update_data.py)
-      - name: Run update_data.py to update data.json
-        run: python update_data.py
+      - name: Run update_json.py to update data.json
+        run: python update_json.py
 
       # Step 5: Commit and push changes if data.json is updated
       - name: Commit and push changes
