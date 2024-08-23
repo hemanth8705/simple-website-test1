@@ -11,4 +11,4 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Run update script
-      run: python update_data.py  # Modify this based on your script location
+      run: python update_json.py  # Modify this based on your script location
