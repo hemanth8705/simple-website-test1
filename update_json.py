@@ -26,4 +26,4 @@ def update_data_json():
 
 if __name__ == '__main__':
   update_data_json()
-  print("Data.json updated successfully!")
+  print("Data.json updated successfully!",str(datetime.now().strftime("%H:%M %d/%m/%Y")))
